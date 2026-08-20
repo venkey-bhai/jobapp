@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "EditCandidat";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model MyMvcApp.Models.Candidate
+
+
+
+<div>
+    <center><h4 style="color: #1A2142; font-size: px; margin-bottom: 30px; margin-top: 20px; font-weight: bold;">Edit Candidate</h4></center>
+    <div >
+        
+    <form asp-controller="Home"
+          asp-action="EditCandidate"
+          method="post"
+          enctype="multipart/form-data">
+
+        @* <div class="search-input-row"> *@
+
+            
+
+            @* <div class="input-style-1 textarea">
+                <input type="text"
+                       id="status"
+                       name="status"
+                       value="status"
+                       placeholder="Status" />
+            </div> *@
+
+            <div class="search-card">
+  <label for="candidate-search" class="search-label">Update Candidate*</label>
+  <input type="text" id="status" name="status" placeholder="Enter status" class="search-input">
+  <button class="search-btn">Update</button>
+</div>
+        @* </div>
+        <button type="submit" class="search-btn" >
+            Update Candidate
+        </button> *@
+    </form>
