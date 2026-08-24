@@ -1,9 +1,9 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
-import pyodbc
+# import pyodbc
 
 # DATABASE_URL = "sqlite:///./milk.db"
-DATABASE_URL = "mssql+pyodbc://@DESKTOP-S5IU22L\\SQLEXPRESS/Jobapp?trusted_connection=yes&driver=ODBC+Driver+17+for+SQL+Server"
+DATABASE_URL = "mssql+pymssql://@DESKTOP-S5IU22L\\SQLEXPRESS/Jobapp?trusted_connection=yes&driver=ODBC+Driver+17+for+SQL+Server"
 
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 
