@@ -1,0 +1,7 @@
+c:\Users\Venkey-Bhai\Desktop\Job-application\Mymvcapp\bin\Release\net10.0\publish\MyMvcApp.exe
+c:\Users\Venkey-Bhai\Desktop\Job-application\Mymvcapp\bin\Release\net10.0\publish\appsettings.Development.json
+c:\Users\Venkey-Bhai\Desktop\Job-application\Mymvcapp\bin\Release\net10.0\publish\appsettings.json
+c:\Users\Venkey-Bhai\Desktop\Job-application\Mymvcapp\bin\Release\net10.0\publish\MyMvcApp.dll
+c:\Users\Venkey-Bhai\Desktop\Job-application\Mymvcapp\bin\Release\net10.0\publish\MyMvcApp.deps.json
+c:\Users\Venkey-Bhai\Desktop\Job-application\Mymvcapp\bin\Release\net10.0\publish\MyMvcApp.runtimeconfig.json
+c:\Users\Venkey-Bhai\Desktop\Job-application\Mymvcapp\bin\Release\net10.0\publish\MyMvcApp.pdb

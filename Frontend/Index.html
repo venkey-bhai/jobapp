@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Code AI</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <div class="container navbar">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="Company Logo">
+                <h2>Code AI</h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="#openings">Openings</a></li>
+                    <li><a href="#application">Apply</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="container">
+
+            <h1>Join Our Team</h1>
+
+            <p>
+                We are always looking for talented, passionate and
+                hardworking people to become part of our growing
+                organization.
+            </p>
+
+            <a href="#application" class="btn">
+                Apply Now
+            </a>
+
+        </div>
+
+    </section>
+
+   
+    <!-- ================= RECRUITMENT CLOSED ================= -->
+
+    <section id="closedMessage">
+
+        <div class="container">
+
+            <h2>Recruitment Closed</h2>
+
+            <p>
+                Thank you for your interest in joining our company.
+            </p>
+
+            <p>
+                Currently we are not accepting job applications.
+            </p>
+
+            <p>
+                Please visit again for future opportunities.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= APPLICATION FORM ================= -->
+
+    <section id="application">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Job Application Form
+            </h2>
+
+            <form id="jobForm">
+
+                <!-- PERSONAL INFORMATION -->
+
+                <h3>Personal Information</h3>
+
+                <div class="form-grid">
+
+                    <div>
+                        <label>Full Name *</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                         <small class="error" id="fullnameError"></small>
+                    </div>
+
+                    <div>
+                        <label>Father / Mother Name</label>
+                        <input type="text">
+                    </div>
+
+                    <div>
+                        <label>Date of Birth</label>
+                        <input type="date">
+                    </div>
+
+                    <div>
+                        <label>Gender</label>
+
+                        <select id="gender">
+                            <option>Select</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+
+                    </div>
+
+                    <div>
+                        <label>Email *</label>
+                        <input type="email" id="email" name="email" required>
+                         <small class="error" id="emailError"></small>
+                    </div>
+
+                    <div>
+                        <label>Mobile Number *</label>
+                        <input type="tel" id="mobile" name="mobile" required>
+                        <small class="error" id="mobileError"></small>
+                    </div>
+
+                    <div>
+                        <label>Alternate Number</label>
+                        <input type="tel">
+                        <small class="error" id="mobileError"></small>
+                    </div>
+
+                </div>
+
+                <!-- ADDRESS -->
+
+                <h3>Address</h3>
+
+                <div class="form-grid">
+
+                    <textarea rows="4" placeholder="Current Address"></textarea>
+
+                    <input type="text" id="city" placeholder="City">
+
+                    <input type="text" id="state" placeholder="State">
+
+                    <input type="text" id="country" placeholder="Country">
+
+                    <input type="text" id="pincode" placeholder="PIN Code">
+
+                </div>
+
+                <!-- EDUCATION -->
+
+                <h3>Education</h3>
+
+                <div class="form-grid">
+
+                    <input type="text"
+                           id="qualification"
+                           name="qualification"
+                           placeholder="Highest Qualification"
+                           required>
+
+                    <input type="text"
+                           id="college"
+                           name="college"
+                           placeholder="College / University">
+
+                    <input type="number"
+                            id="yearOfPassing"
+                            name="yearOfPassing"
+                           placeholder="Year of Passing">
+
+                    <input type="text"
+                           id="percentage"
+                           name="percentage"
+                           placeholder="Percentage / CGPA">
+
+                </div>
+
+                <!-- PROFESSIONAL -->
+
+                <h3>Professional Details</h3>
+
+                <div class="form-grid">
+
+                    <input type="text"
+                           id="experience"
+                           name="experience"
+                           placeholder="Experience">
+
+                    <input type="text"
+                           id="position"
+                           name="position"
+                           placeholder="Desired Position">
+
+                    <input type="text"
+                           placeholder="Current Designation">
+
+                    <input type="text"
+                           placeholder="Current CTC">
+
+                    <input type="text"
+                           placeholder="Expected CTC">
+
+                    <input type="text"
+                           placeholder="Notice Period">
+
+                </div>
+
+                <!-- SKILLS -->
+
+                <h3>Skills</h3>
+
+                <div class="form-grid">
+
+                    <input type="text"
+                            id="primarySkills"
+                            name="primarySkills"
+                           placeholder="Primary Skills">
+
+                    <input type="text"
+                            id="secondarySkills"
+                           name="secondarySkills"
+                           placeholder="Secondary Skills">
+
+                    <input type="text"
+                            id="languagesKnown"
+                           name="languagesKnown"
+                           placeholder="Languages Known">
+
+                </div>
+
+                <!-- UPLOADS -->
+
+                <h3>Resume Upload</h3>
+
+                <div class="form-grid">
+
+                    <div>
+
+                        <label>Resume *</label>
+
+                        <input type="file"
+                               id="resume"
+                               name="resume"
+                               accept=".pdf,.doc,.docx"
+                               required>
+                         <small class="error" id="resumeError"></small>
+                    </div>
+
+                    <div>
+
+                        <label>Passport Photo</label>
+
+                        <input type="file"
+                               accept="image/*">
+
+                    </div>
+
+                </div>
+
+                <!-- ADDITIONAL -->
+
+                <h3>Additional Information</h3>
+
+                <div class="form-grid">
+
+                    <input type="url"
+                           placeholder="LinkedIn Profile">
+
+                    <input type="url"
+                           placeholder="GitHub Profile">
+
+                    <input type="url"
+                           placeholder="Portfolio Website">
+
+                    <textarea rows="5"
+                              placeholder="Why do you want to join our company?"></textarea>
+
+                </div>
+
+                <!-- DECLARATION -->
+
+                <div class="declaration">
+
+                    <label >
+
+                        <input type="checkbox"
+                               id="agree"
+                               required>
+                        <p style="margin-left: 300px;">
+                        I confirm that the information provided is correct.
+                            </p>
+                    </label>
+
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn">
+                        Submit Application
+                    </button>
+                    
+                    <button type="button" id="viewCandidatesBtn" class="btn" onclick="window.location.href='data.html'">
+                        
+                        View Candidates
+                    </button>
+                    
+                </div>  
+
+            </form>
+
+           
+                <!-- <h3>Candidate List</h3>
+                <div id="candidateListMessage"></div>
+                <div class="table-responsive">
+                    <table id="candidateTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Position</th>
+                                <th>Qualification</th>
+                                <th>Experience</th>
+                                <th>Year</th>
+                                <th>Percentage</th>
+                                <th>College</th>
+                                <th>Resume</th>
+                                <th>Month</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </section> --> -->
+
+        </div>
+
+    </section>
+
+    <!-- SUCCESS MESSAGE -->
+
+    <section id="successMessage">
+
+        <div class="container">
+
+            <h2>
+                Application Submitted Successfully!
+            </h2>
+
+            <p>
+                Thank you for applying.
+            </p>
+
+            <p>
+                Our HR team will review your application.
+            </p>
+
+            <p>
+                If your profile matches our requirements,
+                we will contact you soon.
+            </p>
+
+            <h3>
+                Best of Luck!
+            </h3>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <div class="container">
+
+            <h2>Code AI</h2>
+
+            <p>Email : connect@codeaiworks.com</p>
+            
+            <p>Phone : +91 93630 48868</p>
+            <br>
+            <p>Address :223,PSVK COMPLEX,<br>3rd Floor,<br> Santhai Pettai Pudur,<br> Namakkal-637001</p>
+
+            <br>
+
+            <p>
+                © 2026 Code AI
+            </p>
+
+            <p>
+                Privacy Policy |
+                Terms & Conditions
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="searchCandidates.js"></script>
+
+    <div id="loader" class="loader-container">
+
+    <div class="loader"></div>
+
+    <p>Submitting Application...</p>
+
+    </div>
+</body>
+</html>

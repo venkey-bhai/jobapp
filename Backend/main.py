@@ -1,6 +1,10 @@
-﻿import os
+﻿import io
+import os
 from typing import Optional
+# from Backend.schemas import CandidateVoiceSchema
+# import speech_recognition as sr
 
+# import openai
 from fastapi import (
     Depends,
     FastAPI,
@@ -12,13 +16,13 @@ from fastapi import (
 
 from database import get_db
 from models import Candidate
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
 from file_handler import save_resume_file
 
-load_dotenv()
+# load_dotenv()
 
 app = FastAPI(
     title=os.getenv("APP_NAME", "Code AI Careers"),
@@ -41,6 +45,9 @@ def home():
         "message": "Job Application API is Running",
         "status": os.getenv("RECRUITMENT_STATUS", "active"),
     }
+
+
+ 
 
 
 @app.post("/candidates")
