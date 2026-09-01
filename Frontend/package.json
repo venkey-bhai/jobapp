@@ -1,0 +1,11 @@
+{
+  "name": "jobapp-frontend",
+  "version": "1.0.0",
+  "description": "Job Application Frontend",
+  "scripts": {
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.0"
+  }
+}
