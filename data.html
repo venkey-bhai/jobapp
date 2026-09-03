@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Code AI</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+     <header>
+        <div class="container navbar">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="Company Logo">
+                <h2>Code AI</h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#openings">Openings</a></li>
+                    <li><a href="#application">Apply</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+<div class="candidate-actions">
+
+    <button
+        type="button"
+        id="viewCandidatesBtn"
+        class="btnn">
+        View Candidates
+    </button>
+
+    <div class="search-box">
+
+        <label for="searchName">
+            Search Name *
+        </label>
+
+        <div class="search-input-row">
+
+            <input
+                type="text"
+                id="searchName"
+                placeholder="Enter candidate name"
+            >
+
+            <button
+                type="button"
+                id="searchCandidateBtn"
+                class="btnn"
+            >
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+</div>   
+<div class="container">
+    <section id="candidateListSection" style="display: none; margin-top: 2rem;">
+                <h3>Candidate List</h3>
+                <div id="candidateListMessage"></div>
+                <div class="table-responsive">
+                    <table id="candidateTable">
+                        <thead>
+                            <tr>
+                                
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Position</th>
+                                <th>Qualification</th>
+                                <th>Experience</th>
+                                <th>Year</th>
+                                <th>Percentage</th>
+                                <th>College</th>
+                                <th>Resume</th>
+                                <th>Created At</th>
+                                <th>Actions</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+</div>
+     <footer id="contact">
+
+        <div class="container">
+
+            <h2>Code AI</h2>
+
+            <p>Email : connect@codeaiworks.com</p>
+            
+            <p>Phone : +91 93630 48868</p>
+            <br>
+            <p>Address :223,PSVK COMPLEX,<br>3rd Floor,<br> Santhai Pettai Pudur,<br> Namakkal-637001</p>
+
+            <br>
+
+            <p>
+                © 2026 Code AI
+            </p>
+
+            <p>
+                Privacy Policy |
+                Terms & Conditions
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="searchCandidates.js"></script>
+</body>
+
+</html>
