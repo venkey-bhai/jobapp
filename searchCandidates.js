@@ -59,7 +59,7 @@ if (searchCandidateBtn) {
                 const row = document.createElement("tr");
 
                 row.innerHTML = `
-                    <td>${candidate.id || "-"}</td>
+                    
                     <td>${candidate.fullname || "-"}</td>
                     <td>${candidate.email || "-"}</td>
                     <td>${candidate.mobile || "-"}</td>
