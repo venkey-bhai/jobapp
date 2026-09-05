@@ -138,7 +138,7 @@ async function deleteCandidate(id, buttonElement) {
   if (!confirmDelete) return;
 
   try {
-    const response = await fetch(`https://your-app-name.onrender.com/students/${id}/`, {
+    const response = await fetch(`https://jobapp-koib.onrender.com/students/${id}/`, {
       method: "DELETE",
     });
 
