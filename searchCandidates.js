@@ -26,7 +26,7 @@ if (searchCandidateBtn) {
         try {
 
             const url =
-                `http://127.0.0.1:8000/students/search/${encodeURIComponent(name)}/`;
+                ` https://jobapp-koib.onrender.com/students/search/${encodeURIComponent(name)}/`;
 
             console.log("Calling API:", url);
 
