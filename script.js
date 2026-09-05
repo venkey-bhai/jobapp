@@ -16,7 +16,7 @@ if (viewCandidatesBtn) {
 
         try {
             // FIX 1: Added trailing slash to avoid 307 redirects
-            const response = await fetch("https://your-app-name.onrender.com/students");
+            const response = await fetch(" https://jobapp-koib.onrender.com/students");
 
             if (!response.ok) {
                 throw new Error("Could not load candidates.");
@@ -98,7 +98,7 @@ if (form) {
 
         try {
             // FIX 3: Pointed to the exact upload URL defined in main.py
-            const response = await fetch("https://your-app-name.onrender.com/students/upload_resume/", {
+            const response = await fetch("https://jobapp-koib.onrender.com/students/upload_resume/", {
                 method: "POST",
                 body: formData,
             });
