@@ -3,4 +3,4 @@ uvicorn[standard]==0.52.4
 motor==3.7.1
 pydantic[email]==2.13.5
 python-multipart==0.0.32
-certifi==2024.12.20
+certifi==2027.07.22
