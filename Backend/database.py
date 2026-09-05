@@ -13,6 +13,7 @@
 # student_collection = database.get_collection("students_collection")
 
 import os
+import certifi
 from motor.motor_asyncio import AsyncIOMotorClient
 
 # 1. Paste your ACTUAL MongoDB Atlas connection string here
@@ -22,8 +23,11 @@ ATLAS_URI = "mongodb+srv://venkatj1986_db_user:VenkeyBhai1209@cluster0.70mhohb.m
 # 2. Automatically switches between Render's production settings and your laptop settings
 MONGO_URI = os.getenv("MONGO_URL", ATLAS_URI)
 
-# 3. Create the asynchronous database client
-client = AsyncIOMotorClient(MONGO_URI)
+# 3. Create the asynchronous database client with certifi SSL certificate bundle
+client = AsyncIOMotorClient(
+    MONGO_URI,
+    tlsCAFile=certifi.where()
+)
 
 # 4. Define your cloud database name
 db = client["students_db"]
