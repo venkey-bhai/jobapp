@@ -16,7 +16,7 @@ if (viewCandidatesBtn) {
 
         try {
             // FIX 1: Added trailing slash to avoid 307 redirects
-            const response = await fetch("http://127.0.0.1:8000/students/");
+            const response = await fetch("https://your-app-name.onrender.com/students");
 
             if (!response.ok) {
                 throw new Error("Could not load candidates.");
@@ -98,7 +98,7 @@ if (form) {
 
         try {
             // FIX 3: Pointed to the exact upload URL defined in main.py
-            const response = await fetch("http://127.0.0.1:8000/students/upload_resume/", {
+            const response = await fetch("https://your-app-name.onrender.com/students/upload_resume/", {
                 method: "POST",
                 body: formData,
             });
@@ -138,7 +138,7 @@ async function deleteCandidate(id, buttonElement) {
   if (!confirmDelete) return;
 
   try {
-    const response = await fetch(`http://127.0.0.1:8000/students/${id}/`, {
+    const response = await fetch(`https://your-app-name.onrender.com/students/${id}/`, {
       method: "DELETE",
     });
 
