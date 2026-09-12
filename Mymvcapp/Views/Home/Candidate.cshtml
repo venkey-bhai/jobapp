@@ -1,0 +1,255 @@
+﻿@{
+    ViewData["Title"] = "Candidate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- ======== main-wrapper start =========== -->
+    
+        <!-- ========== section start ========== -->
+      <section class="section">
+        <div class="container-fluid">
+          <!-- ========== title-wrapper start ========== -->
+          <div class="title-wrapper pt-30">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="title">
+                  <h2>Job Application Form</h2>
+                </div>
+              </div>
+              <!-- end col -->
+              @* <div class="col-md-6">
+                <div class="breadcrumb-wrapper">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#0">Dashboard</a>
+                      </li>
+                      <li class="breadcrumb-item"><a href="#0">Pages</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Settings
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div> *@
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- ========== title-wrapper end ========== -->
+          <div class="row">
+            
+            <!-- end col -->
+
+            <div class="col-lg-10">
+              <div class="card-style settings-card-2 mb-30">
+                <div class="title mb-30">
+                  <h4>Personal Information</h4>
+                </div>
+               
+<form asp-controller="Home"
+  asp-action="Candidate"
+  method="post"
+  enctype="multipart/form-data">
+
+    <div class="form-grid">
+
+        <div class="input-style-1">
+          <label for="fullname">Full Name</label>
+            <input type="text"
+                   id="fullname"
+                   name="fullname"
+                   placeholder="Full Name"
+                   required>
+        </div>
+
+        <div class="input-style-1">
+          <label for="email">Email</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Email"
+                   required>
+        </div>
+
+        <div class="input-style-1">
+          <label for="mobile">Mobile</label>
+            <input type="text"
+                   id="mobile"
+                   name="mobile"
+                   placeholder="Mobile"
+                   required>
+        </div>
+
+        <div class="input-style-1">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" required >
+              <option value="" selected disabled>Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>
+            </select>
+            
+        </div>
+
+        <div class="input-style-1">
+          <label for="position">Desired Position</label>
+            <input type="text"
+                   id="position"
+                   name="position"
+                   placeholder="Desired Position"
+                   required>
+        </div>
+
+        <div class="input-style-1">
+          <label for="qualification">Qualification</label>
+            <input type="text"
+                   id="qualification"
+                   name="qualification"
+                   placeholder="Qualification"
+                   required>
+        </div>
+
+        <div class="input-style-1">
+          <label for="college">College</label>
+            <input type="text"
+                   id="college"
+                   name="college"
+                   placeholder="College"
+                   required>
+        </div>
+
+        <div class="input-style-1">
+          <label for="yearOfPassing">Year of Passing</label>
+            <input type="text"
+                   id="yearOfPassing"
+                   name="yearOfPassing"
+                   placeholder="Year of Passing"
+                   required>
+        </div>
+
+        <div class="input-style-1">
+          <label for="percentage">Percentage</label>
+            <input type="text"
+                   id="percentage"
+                   name="percentage"
+                   placeholder="Percentage"
+                   required>
+        </div>
+
+        <div class="input-style-1">
+          <label for="experience">Years of Experience</label>
+            <input type="text"
+                   id="experience"
+                   name="experience"
+                   placeholder="Years of Experience"
+                   required>
+        </div>
+
+        <div class="input-style-1">
+          <label for="primarySkills">Primary Skills</label>
+            <input type="text"
+                   id="primarySkills"
+                   name="primarySkills"
+                   placeholder="Primary Skills">
+        </div>
+
+        <div class="input-style-1">
+          <label for="secondarySkills">Secondary Skills</label>
+            <input type="text"
+                   id="secondarySkills"
+                   name="secondarySkills"
+                   placeholder="Secondary Skills">
+        </div>
+
+        <div class="input-style-1">
+          <label for="languagesKnown">Languages Known</label>
+            <input type="text"
+                   id="languagesKnown"
+                   name="languagesKnown"
+                   placeholder="Languages Known">
+        </div>
+
+    </div>
+
+
+    <h3>Resume Upload</h3>
+
+    <div class="input-style-1">
+
+      <label for="resume">Resume</label>
+        <input type="file"
+               id="resume"
+               name="resume"
+               accept=".pdf,.doc,.docx"
+               required>
+
+    </div>
+
+
+    <div>
+        <label>
+            <input type="checkbox"
+                   id="agree"
+                   name="declaration"
+                   required>
+
+            I agree to the terms and conditions
+        </label>
+    </div>
+
+
+    <div class="form-action">
+
+        <button type="submit"
+                class="main-btn primary-btn btn-hover">
+            Submit Application
+        </button>
+
+    </div>
+
+</form>
+
+
+                
+              </div>
+              <!-- end card -->
+            </div>
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- ========== section end ========== -->
+<!-- ========== footer start =========== -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 order-last order-md-first">
+              <div class="copyright text-center text-md-start">
+                <p class="text-sm">
+                  Designed and Developed by
+                  <a href="https://plainadmin.com" rel="nofollow" target="_blank">
+                    PlainAdmin
+                  </a>
+                </p>
+              </div>
+            </div>
+            <!-- end col-->
+            <div class="col-md-6">
+              <div class="terms d-flex justify-content-center justify-content-md-end">
+                <a href="#0" class="text-sm">Term & Conditions</a>
+                <a href="#0" class="text-sm ml-15">Privacy & Policy</a>
+              </div>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </footer>
+      <!-- ========== footer end =========== -->
+      
+    
+    <!-- ======== main-wrapper end =========== -->

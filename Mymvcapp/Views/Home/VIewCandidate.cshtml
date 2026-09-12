@@ -1,0 +1,158 @@
+@model IEnumerable<MyMvcApp.Models.Student>
+
+@{
+    ViewData["Title"] = "View Candidate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    
+<center> <h2 style="color: #1A2142; font-size: 20px; margin-bottom: 20px; margin-top: 15px;">Candidate List</h2></center>
+    <div class="search-card">
+        <label for="searchName" class="search-label" >
+            Search Candidate*
+        </label>
+
+   <div class="search-box">
+    <button id="add-btn" class="icon-btn" title="Add File" type="button">+</button>
+  
+  <input 
+    type="text" 
+    id="search-input" 
+    placeholder="Search candidate..." 
+  />
+    <button id="startBtn" class="icon-btn" title="Click to speak" type="button">
+    <svg id="mic-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+      <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+      <line x1="12" y1="19" x2="12" y2="22"></line>
+    </svg>
+  </button>
+   
+    <button id="stopBtn" class="stop-btn" type="button" >
+        ⏹️
+    </button>
+    <span id="status" role="status" aria-live="polite"></span>
+     
+   </div>
+
+ <div class="search-input-row" >
+            <form asp-controller="Home"
+                        asp-action="SearchCandidate"
+                        method="get"
+                        style="display: flex; gap: 10px; align-items: center;">
+
+                    <div class="search-card">
+                        <input type="text"
+                            name="search"
+                            placeholder="Enter candidate name"
+                            class="form-control"
+                             />
+                
+                        <button type="submit" class="search-btn" >
+                            Search
+                        </button>
+                    </div>                    
+                    
+                    </form>
+
+        </div>
+    </div>
+
+   <div class="candidate-table-wrapper">
+    
+    <table id="candidateTable" >
+
+        <thead>
+            <tr>
+                <th >Name</th>
+                <th >Email</th>
+                <th >Phone</th>
+                <th>gender</th>
+                <th >Position</th>
+                <th >Qualification</th>
+                <th >Experience</th>
+                <th >Year</th>
+                <th >Percentage</th>
+                <th >College</th>
+                <th >Resume</th>
+                <th >Status</th>
+                <th >Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (Student students in Model)
+            {
+                <tr style="height: 35px;">
+                    <td >@students.fullname</td>
+                    <td >@students.email</td>
+                    <td >@students.mobile</td>
+                    <td >@students.gender</td>
+                    <td >@students.position</td>
+                    <td >@students.qualification</td>
+                    <td >@students.experience</td>
+                    <td >@students.yearOfPassing</td>
+                    <td >@students.percentage</td>
+                    <td >@students.college</td>
+                    <td >@students.resume</td>
+                    <td >@students.status</td>
+
+                    <td >    
+                        <a asp-controller="Home"
+                        asp-action="EditCandidate"
+                        asp-route-id="@students.Id"
+                        class="primary-btn">
+                            Edit
+                        </a>
+
+                    <form asp-controller="Home"
+                        asp-action="DeleteCandidate"
+                        method="post"
+                        style="display:inline;">
+
+                        <input type="hidden"
+                            name="candidateId"
+                            value="@students.Id" />
+
+                        <button type="submit" class="danger-btn" onclick="return confirm('Are you sure you want to delete this candidate?');" style="padding: 6px 12px; font-size: 12px; height: auto;">
+                            Delete
+                        </button>
+
+                    </form>
+
+                        @* <form asp-controller="Home"
+                            asp-action="EditCandidate"
+                            method="get"
+                            style="display:inline;">
+
+                            <input type="hidden"
+                                name="id"
+                                value="@candidate.Id" />
+
+                            <button type="submit" class="primary-btn" >
+                                Edit
+                            </button>
+                        </form>
+
+                        <form asp-controller="Home"
+                            asp-action="DeleteCandidate"
+                            method="post"
+                            style="display:inline;">
+
+                            <input type="hidden"
+                                name="candidateId"
+                                value="@candidate.Id" />
+
+                            <button type="submit" class="danger-btn" onclick="return confirm('Are you sure you want to delete this candidate?');" >
+                                Delete
+                            </button>
+                        </form> *@
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>
