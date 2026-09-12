@@ -1,5 +1,11 @@
 fastapi==0.141.1
 uvicorn[standard]==0.52.4
 motor==3.7.1
+pymongo==4.17.0
 pydantic[email]==2.13.5
 python-multipart==0.0.32
+certifi==2026.07.22
+numpy==2.5.3
+SpeechRecognition==3.17.0
+noisereduce==3.0.3
+pydub==0.25.1
