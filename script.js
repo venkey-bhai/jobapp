@@ -47,6 +47,7 @@ if (viewCandidatesBtn) {
                     <td>${candidate.college || "-"}</td>
                     <td>${candidate.resume || "-"}</td>
                     <td>${candidate.gender || "-"}</td>
+                    <td>${candidate.status || "-"}</td>
                     <td>
                         <button 
                             class="delete-btn" 
