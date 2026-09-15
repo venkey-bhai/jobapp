@@ -5,6 +5,9 @@
   <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
   <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   <GenerateRazorAssemblyInfo>false</GenerateRazorAssemblyInfo>
+
+  <ImplicitUsings>enable</ImplicitUsings>
+
   <Nullable>enable</Nullable>
 </PropertyGroup>
 
