@@ -59,7 +59,7 @@ if (searchCandidateBtn) {
                 const row = document.createElement("tr");
 
                 row.innerHTML = `
-                    <td>${candidate.id || "-"}</td>
+                    
                     <td>${candidate.fullname || "-"}</td>
                     <td>${candidate.email || "-"}</td>
                     <td>${candidate.mobile || "-"}</td>
@@ -71,6 +71,7 @@ if (searchCandidateBtn) {
                     <td>${candidate.college || "-"}</td>
                     <td>${candidate.resume || "-"}</td>
                     <td>${candidate.applied_date || "-"}</td>
+                    <td>${candidate.status || "-"}</td>
                     <td>${candidate.created_at || "-"}</td>
                     <td>
                     
